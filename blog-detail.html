@@ -2,63 +2,70 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Halaman Detail Blog Pemrograman">
-    <meta name="author" content="Student">
-    <title>Blog Detail</title>
+    <title>Dev Blogs - Detail</title>
 </head>
 <body>
-    <!-- Navigasi Utama -->
-    <p>
-        <a href="index.html">IMDb Movies</a> | 
-        <a href="blog.html">Dev Blogs</a> | 
-        <a href="form.html">Form Pendaftaran</a> | 
+    <nav>
+        <a href="index.html">IMDb</a> |
+        <a href="blog.html">Dev Blogs</a> |
+        <a href="form.html">Pendaftaran Akun</a> |
         <a href="cv.html">Curriculum Vitae</a>
-    </p>
+    </nav>
     <hr>
+
+    <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fk8sq4oiy0stnozjd1xgs.png" alt="Cover Docker" width="100%">
     
-    <!-- Cover dan Info Author -->
-    <img src="https://via.placeholder.com/800x200" width="100%" alt="Gambar Cover Blog">
-    
-    <p>
-        <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="Foto Profil Vishnu Satheesh">
-        <span><b>Vishnu Satheesh</b></span><br />
-        <span>Posted on May 31</span>
-    </p>
-    
-    <!-- Judul dan Tag -->
+    <table>
+        <tr>
+            <td>
+                <img src="" alt="32x32" width="32" height="32">
+            </td>
+            <td>
+                <b>Vishnu Satheesh</b><br />
+                <span>Posted on May 31</span>
+            </td>
+        </tr>
+    </table>
+
     <h1>How to Deploy a Web Application Using Docker and NGINX on Your Own Server</h1>
-    <p><span>#webdev</span>&nbsp;<span>#devops</span></p>
+    <p><span>#webdev</span> &nbsp; <span>#devops</span></p>
     
     <hr>
     
-    <!-- Konten Artikel -->
     <p>Deploying a web application doesn't need to be a complicated process. With Docker, NGINX, and your own server, you can get your app live in no time.</p>
-    <p>In this blog, I'll show you step by step how to serve your app with a domain, route traffic with NGINX, and run it all inside a Docker container. This guide is specifically tailored for a Linux-based server</p>
+    <p>In this blog, I'll show you step by step how to serve your app with a domain, route traffic with NGINX, and run it all inside a Docker container. This guide is specifically tailored for a Linux-based server.</p>
     
-    <h3>Step 1 : Setup docker</h3>
-    <p>First, let's set up Docker. I'm using a simple React app as an example, but feel free to use any application or codebase of your choice. Create a Dockerfile in your project directory to define how your app should be containerized.<br>Dockerfile:</p>
+    <p><b>Step 1 : Setup docker</b><br>
+    First, let's set up Docker. I'm using a simple React app as an example, but feel free to use any application or codebase of your choice. Create a Dockerfile in your project directory to define how your app should be containerized.<br>
+    Dockerfile:</p>
     
-    <pre>FROM node:20-alpine
-WORKDIR /app
-COPY package*.json ./
-RUN npm install
-COPY . .
-CMD [ "npm", "start" ]</pre>
-
-    <h3>Step 2 : Build and Run the Docker Container (on your server)</h3>
-    <p>Once you've created your Dockerfile, the next step is to build your Docker image and run it to make sure everything is working as expected.</p>
-
-    <h3>Conclusion</h3>
-    <p>Deploying your web application using Docker and NGINX on your own server might sound intimidating at first, but once you break it down, it's quite manageable.<br>By containerizing your app, setting up NGINX as a reverse proxy, and linking everything together on your VPS, you gain full control over your deployment process.</p>
+    <p>FROM node:20-alpine<br>
+    WORKDIR /app<br>
+    COPY package*.json ./<br>
+    RUN npm install<br>
+    COPY . .<br>
+    CMD [ "npm", "start" ]</p>
+    
+    <p><b>Step 2 : Build and Run the Docker Container (on your server)</b><br>
+    Once you've created your Dockerfile, the next step is to build your Docker image and run it to make sure everything is working as expected.</p>
+    
+    <p><b>Conclusion</b><br>
+    Deploying your web application using Docker and NGINX on your own server might sound intimidating at first, but once you break it down, it's quite manageable.<br>
+    By containerizing your app, setting up NGINX as a reverse proxy, and linking everything together on your VPS, you gain full control over your deployment process.</p>
     
     <hr>
     
-    <!-- Bagian Komentar -->
     <p><b>Top comments (0)</b></p>
-    <br><br>
-    
-    <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="Foto Profil Pengguna">
-    <textarea rows="3" placeholder="Add to the discussion"></textarea>
+    <table>
+        <tr>
+            <td valign="top">
+                <img src="" alt="32x32" width="32" height="32">
+            </td>
+            <td>
+                <textarea rows="3" cols="50" placeholder="Add to the discussion"></textarea>
+            </td>
+        </tr>
+    </table>
+
 </body>
 </html>
