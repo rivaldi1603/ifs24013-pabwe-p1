@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Akun</title>
+</head>
+<body>
+    <p>
+        <a href="index.html">IMDb Movies</a> | 
+        <a href="blog.html">Dev Blogs</a> | 
+        <a href="form.html">Form Pendaftaran</a> | 
+        <a href="cv.html">Curriculum Vitae</a>
+    </p>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>Daftar Akun</legend>
+            
+            Nama Lengkap: <input type="text" name="nama_lengkap">
+            <hr>
+            
+            Jenis Kelamin: 
+            <input type="radio" name="jenis_kelamin" id="laki_laki" value="Laki-Laki">
+            <label for="laki_laki">Laki-Laki</label>
+            <input type="radio" name="jenis_kelamin" id="perempuan" value="Perempuan">
+            <label for="perempuan">Perempuan</label>
+            <hr>
+            
+            Tempat Lahir: <input type="text" name="tempat_lahir">
+            <hr>
+            
+            Tanggal Lahir: <input type="date" name="tanggal_lahir">
+            <hr>
+            
+            Agama: 
+            <select name="agama">
+                <option value="">--- Pilih Agama ---</option>
+                <option value="Islam">Islam</option>
+                <option value="Katolik">Katolik</option>
+                <option value="Protestan">Protestan</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Buddha">Buddha</option>
+                <option value="Konghucu">Konghucu</option>
+            </select>
+            <hr>
+            
+            Hobi: 
+            <input type="checkbox" name="hobi" id="olahraga" value="Olahraga">
+            <label for="olahraga">Olahraga</label>
+            <input type="checkbox" name="hobi" id="membaca" value="Membaca">
+            <label for="membaca">Membaca</label>
+            <input type="checkbox" name="hobi" id="ngoding" value="Ngoding">
+            <label for="ngoding">Ngoding</label>
+            <hr>
+            
+            Password: <input type="password" name="password">
+            <hr>
+            
+            <input type="checkbox" name="persetujuan" id="persetujuan" value="Setuju">
+            <label for="persetujuan">Dengan mendaftar saya setuju dengan Ketentuan dan Kebijakan Privasi Aplikasi.</label>
+            <hr>
+            
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
